@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'HelveticaNeuefont';
+    src: url('/assets/font/HelveticaNeue-Light.otf') format('opentype');
+}
+
+.banner {
+    background-color: rgba(122, 172, 238, 0.226);
+}
+#ask-weather {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+  }
+h1 {
+    text-align: center;
+}
+body {
+    font-family: 'HelveticaNeuefont';
+    background: fixed;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: cover;
+}
+.search {
+    text-align: right;
+}
+.global {
+    text-align: center;
+    background-color: rgba(141, 177, 224, 0.459);
+    color: black;
+}
+
+.cityName {
+    font-size: 70px;
+}
+.temp {
+    font-size: 50px;
+}
+.date {
+    font-size: 20px;
+}
+.containerHourly {
+    width: 200em;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 800px;
+}
+.hourly {
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: nowrap;
+}
+.containerHourly.dataHourly {
+    display: inline-block;
+    color: white;
+    text-align: center;
+}
+.dataHourly {
+    margin-right: 20px;
+}
+.searchControlBtn{
+    background-color: rgba(201, 241, 251, 0.397);
+    border-radius: 10%;
+}
+.dayByDay {
+    margin-top: 30px;
+}
+.dayRow {
+    background-color: rgba(255, 255, 255, 0.301);
+    display: flex;
+    font-size: 15px;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(71, 175, 236, 0.342); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #1b85e96b; 
+}
+.surroundDiv {
+    display: inline-block;
+}
+.gif {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    margin-left: 25px;
+}
+.wind_informations {
+    position: absolute;
+    margin: 200px;
+    background-color: rgba(245, 245, 251, 0.705);
+    padding: 20px;
+}

@@ -170,8 +170,9 @@ function updatePage(météo){
     dayOne.innerHTML = "";
      for(i = 1 ; i < 5 ; i++){
          const data = "fcst_day_"+[i];
-         dayOne.innerHTML += `<div class="dayByDay col-3">`+ `<p>`+météo[data].date + " " +`</p>`+  météo[data].day_long +`<p>` +
-                             `<img src="`+ météo[data].icon +`"></img>`+` </p>` +`</div>`;
+         dayOne.innerHTML += `<div class="dayByDay col-3">`+ `<p>`+météo[data].date + " " +`</p>` + `<p>` + météo[data].tmin + "°" + `/` +
+                            météo[data].tmax + "°" + `<p>` +  météo[data].day_long +`<p>` +`<img src="`+ météo[data].icon +`"></img>`+` </p>`
+                            +`</div>`;
      }
      condition = météo.current_condition.condition;
      updateBackground() 
@@ -181,4 +182,4 @@ function show(windContainer) {
   }
   function hide(windContainer) {
     document.getElementById(windContainer).style.visibility = "hidden";
-  }
+}

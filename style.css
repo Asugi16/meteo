@@ -50,10 +50,8 @@ body {
 }
 .date {
     font-size: 20px;
-    font-weight: bold;
 }
 .containerHourly {
-    width: 200em;
     overflow-x: auto;
     white-space: nowrap;
     max-width: 800px;

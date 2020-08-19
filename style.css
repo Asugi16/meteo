@@ -1,10 +1,18 @@
+@media only screen and (max-width: 600px) {
+    .gif {
+       display: none;
+    }
+    .wind_informations {
+        display: none;
+    }
+}   
 @font-face {
     font-family: 'HelveticaNeuefont';
     src: url('/assets/font/HelveticaNeue-Light.otf') format('opentype');
 }
 
 .banner {
-    background-color: rgba(122, 172, 238, 0.226);
+    background-color: rgba(188, 217, 255, 0.226);
 }
 #ask-weather {
     margin: auto;
@@ -27,7 +35,7 @@ body {
 }
 .global {
     text-align: center;
-    background-color: rgba(141, 177, 224, 0.459);
+    background-color: rgba(255, 255, 255, 0.274);
     color: black;
 }
 
@@ -37,8 +45,12 @@ body {
 .temp {
     font-size: 50px;
 }
+.lisible {
+    background-color: rgba(255, 255, 255, 0.472);
+}
 .date {
     font-size: 20px;
+    font-weight: bold;
 }
 .containerHourly {
     width: 200em;
@@ -81,11 +93,11 @@ body {
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(71, 175, 236, 0.342); 
+    background: rgba(71, 175, 236, 0.561); 
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #1b85e96b; 
+    background: #0c8aff93; 
 }
 .surroundDiv {
     display: inline-block;
@@ -100,6 +112,7 @@ body {
 .wind_informations {
     position: absolute;
     margin: 200px;
-    background-color: rgba(245, 245, 251, 0.705);
+    background-color: rgba(0, 0, 0, 0.705);
     padding: 20px;
+    color: white;
 }

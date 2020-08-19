@@ -152,7 +152,7 @@ const updateBackground = function() {
 function updatePage(météo){
     restTemp.textContent = météo.current_condition.tmp + "°C";
     restCity.textContent = météo.city_info.name;
-    restDate.textContent = météo.current_condition.date;
+    restDate.textContent = "Nous sommes le " + météo.fcst_day_0.day_long +" "+ météo.current_condition.date;
     restIcon.setAttribute("src",météo.current_condition.icon_big);
     restWeather.textContent = météo.current_condition.condition;
     restWindDir.textContent = "Direction du vent: " + météo.current_condition.wnd_dir;

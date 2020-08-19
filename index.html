@@ -11,27 +11,29 @@
 
 <body id="body">
     <div class="banner">
-        <h1>Météo France</h1>
+        <h1>Bonjour</h1>
         <div class="search" id="searchContainer">
             <input class="searchControlInput" type="text" placeholder="Nom de Ville" id="searchInput">
             <button class="searchControlBtn" onclick="updateMeteo()" id="searchBtn">Recherche</button>
         </div>
     </div>
     <div id="global" class="global">
-        <div id="resCity" class="cityName"></div>
-        <div id="weather-result"></div>
         <div id="surroundDiv">
             <img src="https://imperihome.com/wp-content/uploads/2017/10/eolienne.gif" class="gif" alt="img eolienne" onMouseOver="show('windContainer')" onMouseOut="hide('windContainer')">
             <div id="windContainer" class="wind_informations">
                 <div id="windSpeed"></div>
                 <div id="windDirection"></div>
             </div>
-        </div>    
+        </div> 
+        <div class="lisible container">
+        <div id="resCity" class="cityName"></div>
+        <div id="weather-result"></div>
         <img src="" id="resIcon" class="icon" alr="image en rapport avec la température actuelle"></img>
         <div id="resTemp" class="temp"></div>
-        <div id="resDate" class="date"></div>
-        <div class="container containerHourly">
-            <div id="hourlyData" class="hourly row"></div>
+            <div id="resDate" class="date"></div>
+                <div class="container containerHourly">
+                <div id="hourlyData" class="hourly row"></div>
+            </div>
         </div>
         <div class="container nextDay">
             <div id="day" class="dayRow row"></div>

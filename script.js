@@ -7,6 +7,7 @@ let restCity = document.querySelector("#resCity");
 let restDate = document.querySelector("#resDate");
 let restWindDir = document.querySelector("#windDirection");
 let restWindSpeed = document.querySelector("#windSpeed");
+let title = document.querySelector("#title");
 const restWeather = document.querySelector("#weather-result");
 let restHourly = document.querySelector("#hourlyData");
 const $body = document.querySelector("#body");
@@ -15,7 +16,7 @@ let condition ="";
         request.then(function(response){
             return response.json();
         })
-     .then(function(askWeather){
+        .then(function(askWeather){
             updatePage(askWeather);
         })
         
@@ -182,4 +183,8 @@ function show(windContainer) {
   }
   function hide(windContainer) {
     document.getElementById(windContainer).style.visibility = "hidden";
+}
+
+function updateTitle(){
+    title = city_info.name;
 }

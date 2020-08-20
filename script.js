@@ -1,13 +1,13 @@
 
 let url = "https://www.prevision-meteo.ch/services/json/";
 let request = fetch("https://www.prevision-meteo.ch/services/json/toulon")
-let restTemp = document.querySelector("#resTemp");
-let restIcon = document.querySelector("#resIcon");
-let restCity = document.querySelector("#resCity");
-let restDate = document.querySelector("#resDate");
-let restWindDir = document.querySelector("#windDirection");
-let restWindSpeed = document.querySelector("#windSpeed");
-let title = document.querySelector("#title");
+const restTemp = document.querySelector("#resTemp");
+const restIcon = document.querySelector("#resIcon");
+const restCity = document.querySelector("#resCity");
+const restDate = document.querySelector("#resDate");
+const restWindDir = document.querySelector("#windDirection");
+const restWindSpeed = document.querySelector("#windSpeed");
+const title = document.querySelector("#title");
 const restWeather = document.querySelector("#weather-result");
 let restHourly = document.querySelector("#hourlyData");
 const $body = document.querySelector("#body");
@@ -43,7 +43,7 @@ function updateMeteo(){
 const updateBackground = function() {
     switch (condition) {
         case 'Ensoleillé':
-            $body.style.backgroundImage = 'url(https://images4.alphacoders.com/804/thumb-1920-80438.jpg)';  
+            $body.style.backgroundImage = 'url(https://observatorcl.info/wp-content/uploads/2020/01/ANM.jpg)';  
             break;
         case 'Ciel voilé':
             $body.style.backgroundImage = 'url(https://images7.alphacoders.com/680/thumb-1920-680835.jpg)';
@@ -52,7 +52,7 @@ const updateBackground = function() {
             $body.style.backgroundImage = 'url(https://images5.alphacoders.com/431/thumb-1920-431971.jpg)';
             break;
         case 'Eclaircies':
-            $body.style.backgroundImage = 'url(https://images4.alphacoders.com/804/thumb-1920-80438.jpg)';
+            $body.style.backgroundImage = 'url(https://wallpaperaccess.com/full/1167968.jpg)';
             break;
         case 'Stratus se dissipant':
             $body.style.backgroundImage = 'url(https://images7.alphacoders.com/680/thumb-1920-680835.jpg)';

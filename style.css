@@ -103,12 +103,8 @@ body {
 .gif {
     height: 300px;
     width: 200px;
-    position: absolute;
-    left: 0;
-    margin-left: 35px;
 }
 .wind_informations {
-    position: absolute;
     margin: 200px;
     background-color: rgba(0, 0, 0, 0.705);
     padding: 20px;

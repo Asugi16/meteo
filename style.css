@@ -1,5 +1,5 @@
 :root {
-    --bgcolor: rgb(255, 255, 255, 0.274);
+    --bgcolor: rgb(255, 255, 255, 0.274);*
 }
 @media only screen and (max-width: 600px) {
     .gif {

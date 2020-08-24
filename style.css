@@ -1,3 +1,6 @@
+:root {
+    --bgcolor: rgb(255, 255, 255, 0.274);
+}
 @media only screen and (max-width: 600px) {
     .gif {
        display: none;
@@ -6,13 +9,14 @@
         display: none;
     }
 }   
+
 @font-face {
     font-family: 'HelveticaNeuefont';
     src: url('/assets/font/HelveticaNeue-Light.otf') format('opentype');
 }
 
 .banner {
-    background-color: rgba(188, 217, 255, 0.226);
+    background-color: var(--bgcolor);
 }
 #ask-weather {
     margin: auto;
@@ -35,7 +39,7 @@ body {
 }
 .global {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.274);
+    background-color: var(--bgcolor);
     color: black;
 }
 
@@ -46,7 +50,7 @@ body {
     font-size: 50px;
 }
 .lisible {
-    background-color: rgba(255, 255, 255, 0.472);
+    background-color: var(--bgcolor);
 }
 .date {
     font-size: 20px;
@@ -72,14 +76,14 @@ body {
     margin-right: 20px;
 }
 .searchControlBtn{
-    background-color: rgba(201, 241, 251, 0.397);
+    background-color: var(--bgcolor);
     border-radius: 10%;
 }
 .dayByDay {
     margin-top: 30px;
 }
 .dayRow {
-    background-color: rgba(255, 255, 255, 0.301);
+    background-color: var(--bgcolor);
     display: flex;
     font-size: 15px;
 }
@@ -97,16 +101,19 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #0c8aff93; 
 }
-.surroundDiv {
-    display: inline-block;
-}
 .gif {
     height: 300px;
     width: 200px;
 }
+.big_wind_div {
+    display: inline-flex;
+}
 .wind_informations {
-    margin: 200px;
     background-color: rgba(0, 0, 0, 0.705);
     padding: 20px;
     color: white;
+    position: absolute;
+    left: 0;
+    margin-left: 500px;
+    margin-top: 100px;
 }

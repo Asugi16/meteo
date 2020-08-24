@@ -10,6 +10,7 @@ const $windSpeed = document.querySelector("#windSpeed");
 const $weather = document.querySelector("#weather-result");
 const $hourly = document.querySelector("#hourlyData");
 const $body = document.querySelector("#body");
+const $cityWanted = document.querySelector("#searchInput");
 
         $request.then(function(response){
             return response.json();
@@ -26,9 +27,8 @@ input.addEventListener("keyup", function(event) {
   }
 });
         
-function updateWeather(){
-    let $cityWanted = document.getElementById("searchInput").value;
-    fetch($url + $cityWanted)
+function updateWeather($cityWanted){
+    fetch($url + $cityWanted.value)
     .then(response => response.json())
     .then(function(response) {
         updatePage(response);

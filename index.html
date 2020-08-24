@@ -14,7 +14,7 @@
         <h1 id="title"></h1>
         <div class="search" id="searchContainer">
             <input class="searchControlInput" type="text" placeholder="Nom de Ville" id="searchInput">
-            <button class="searchControlBtn" onclick="updateWeather()" id="searchBtn">Recherche</button>
+            <button class="searchControlBtn" onclick="updateWeather($cityWanted)" id="searchBtn">Recherche</button>
         </div>
     </div>
     <div id="global" class="global">
@@ -31,7 +31,7 @@
         <div class="container nextDay">
             <div id="day" class="dayRow row"></div>
         </div>
-        <div id="surroundDiv">
+        <div id="surroundDiv" class="big_wind_div">
             <img src="https://imperihome.com/wp-content/uploads/2017/10/eolienne.gif" class="gif" alt="img eolienne" onMouseOver="show('windContainer')" onMouseOut="hide('windContainer')">
             <div id="windContainer" class="wind_informations">
                 <div id="windSpeed"></div>

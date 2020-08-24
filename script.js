@@ -1,6 +1,6 @@
 
-let url = "https://www.prevision-meteo.ch/services/json/";
-let request = fetch("https://www.prevision-meteo.ch/services/json/toulon")
+let $url = "https://www.prevision-meteo.ch/services/json/";
+let $request = fetch("https://www.prevision-meteo.ch/services/json/toulon")
 const $temp = document.querySelector("#resTemp");
 const $icon = document.querySelector("#resIcon");
 const $city = document.querySelector("#resCity");
@@ -11,7 +11,7 @@ const $weather = document.querySelector("#weather-result");
 const $hourly = document.querySelector("#hourlyData");
 const $body = document.querySelector("#body");
 
-        request.then(function(response){
+        $request.then(function(response){
             return response.json();
         })
         .then(function(askWeather){
@@ -27,8 +27,8 @@ input.addEventListener("keyup", function(event) {
 });
         
 function updateWeather(){
-    let cityWanted = document.getElementById("searchInput").value;
-    fetch(url + cityWanted)
+    let $cityWanted = document.getElementById("searchInput").value;
+    fetch($url + $cityWanted)
     .then(response => response.json())
     .then(function(response) {
         updatePage(response);
@@ -39,7 +39,7 @@ function updateWeather(){
 }
 
 const imagesForConditions = {
-        'Ensoleillé':'https://observatorcl.info/wp-content/uploads/2020/01/ANM.jpg',
+        "Ensoleillé":"https://observatorcl.info/wp-content/uploads/2020/01/ANM.jpg",
         'Ciel voilé':'https://images7.alphacoders.com/680/thumb-1920-680835.jpg',
         'Faiblement nuageux':'https://images5.alphacoders.com/431/thumb-1920-431971.jpg',
         'Eclaircies':'https://wallpaperaccess.com/full/1167968.jpg',
@@ -85,7 +85,7 @@ function updatePage(weather){
     $windSpeed.textContent = "La vitesse du vent est de " + weather.current_condition.wnd_spd + " km/h";
 
     let result = getImagesForConditions(weather.current_condition.condition);
-    document.body.style.backgroundImage = `url(${result};`
+    document.body.style.backgroundImage = `url(${result}`;
     
     let $hourly = Object.entries(weather.fcst_day_0.hourly_data);
     let html ="";

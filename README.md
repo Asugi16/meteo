@@ -1,3 +1,3 @@
 # meteo
-https://asugi16.github.io/meteo/
+[Application météo](https://asugi16.github.io/meteo/)
 découverte fetch js
